@@ -1,0 +1,94 @@
+body {
+  background-color: cadetblue;
+}
+.block_keyboard {
+  width: 850px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.block_text {
+  width: 100%
+}
+
+.block_text  textarea{
+  margin-left: 18.7%;
+  width: 838px;
+  height: 200px;
+  font-size: 130%;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: cursive, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.1%;
+}
+
+.list button {
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  font-size: 100%;
+  font-weight: 600;
+  color: rgb(209,209,217);
+  text-decoration: none;
+  text-shadow: 0 -1px 2px rgba(0,0,0,.2);
+  outline: none;
+  border-radius: 7px;
+  background: linear-gradient(rgb(110,112,120), rgb(81,81,86)) rgb(110,112,120);
+  box-shadow:
+   0 1px rgba(255,255,255,.2) inset,
+   0 3px 5px rgba(0,1,6,.5),
+   0 0 1px 1px rgba(0,1,6,.2);
+  transition: .2s ease-in-out;
+}
+
+.list button:active, .block_keyboard .focus, .block_keyboard .focus_caps{
+  color:black;
+  top: 2px;
+  background:darkkhaki;
+  box-shadow:
+   0 0 1px rgba(0,0,0,.5) inset,
+   0 2px 3px rgba(0,0,0,.5) inset,
+   0 1px 1px rgba(255,255,255,.1);
+}
+
+.block_keyboard button {
+  height: 50px;
+  width: 50px;
+}
+
+button[value="Backspace"] {
+  width: 11.5%;  
+}
+
+button[value="Tab"] {
+  width: 9%;  
+}
+
+button[value="Enter"] {
+  width: 12%;  
+}
+
+button[value="CapsLock"] {
+  width: 11%;  
+}
+
+button[value="Space"] {
+  width: 47%;
+}
+
+button[value="ShiftLeft"], button[value="ShiftRight"] {
+  width: 12.5%;
+}
